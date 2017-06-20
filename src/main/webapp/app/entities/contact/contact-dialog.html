@@ -33,7 +33,7 @@
             <label class="control-label" data-translate="jhipsterSampleApplicationApp.contact.email" for="field_email">Email</label>
             <input type="text" class="form-control" name="email" id="field_email"
                     ng-model="vm.contact.email"
-                    required ng-minlength="5"/>
+                    required ng-pattern="/\S+@\S+\.\S+/" ng-minlength="5"/>
             <div ng-show="editForm.email.$invalid">
                 <p class="help-block"
                     ng-show="editForm.email.$error.required" data-translate="entity.validation.required">
@@ -43,13 +43,17 @@
                     ng-show="editForm.email.$error.minlength" data-translate="entity.validation.minlength" translate-value-min="5">
                     This field is required to be at least 5 characters.
                 </p>
+                <p class="help-block"
+                   ng-show="editForm.email.$error.pattern">
+                    This field is required to be an email.
+                </p>
             </div>
         </div>
         <div class="form-group">
             <label class="control-label" data-translate="jhipsterSampleApplicationApp.contact.phone" for="field_phone">Phone</label>
             <input type="text" class="form-control" name="phone" id="field_phone"
                     ng-model="vm.contact.phone"
-                    required ng-minlength="10"/>
+                    required ng-pattern="/^\d{0,10}(\.\d{1,10})?$/" ng-minlength="10"/>
             <div ng-show="editForm.phone.$invalid">
                 <p class="help-block"
                     ng-show="editForm.phone.$error.required" data-translate="entity.validation.required">
@@ -58,6 +62,10 @@
                 <p class="help-block"
                     ng-show="editForm.phone.$error.minlength" data-translate="entity.validation.minlength" translate-value-min="10">
                     This field is required to be at least 10 characters.
+                </p>
+                <p class="help-block"
+                   ng-show="editForm.phone.$error.pattern">
+                    This field is required to a phone number(no dashes please).
                 </p>
             </div>
         </div>
