@@ -5,9 +5,9 @@
         .module('jhipsterSampleApplicationApp')
         .controller('ContactDetailController', ContactDetailController);
 
-    ContactDetailController.$inject = ['$scope', '$rootScope', '$stateParams', 'previousState', 'entity', 'Contact'];
+    ContactDetailController.$inject = ['$scope', '$rootScope', '$stateParams', 'previousState', 'entity', 'Contact', 'User'];
 
-    function ContactDetailController($scope, $rootScope, $stateParams, previousState, entity, Contact) {
+    function ContactDetailController($scope, $rootScope, $stateParams, previousState, entity, Contact, User) {
         var vm = this;
 
         vm.contact = entity;

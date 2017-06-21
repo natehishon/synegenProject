@@ -3470,5 +3470,12 @@ ui bootstrap tweaks
 
 /* jhipster-needle-css-add-main JHipster will add new css style */
 
-p {
-  color: navy; }
+.contact-id {
+  color: inherit; }
+  .contact-id:hover {
+    text-decoration: none;
+    color: #33b5e5; }
+
+.contact-dialog-errors {
+  color: #f44336;
+  visibility: hidden; }

@@ -1,7 +1,7 @@
 {
     "home": {
         "title": "Nate Hishon Contact Book",
-        "subtitle": "A project",
+        "subtitle": "A Synegen project",
         "logged": {
             "message": "You are logged in as user \"{{username}}\"."
         },

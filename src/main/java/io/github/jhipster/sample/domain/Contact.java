@@ -28,7 +28,7 @@ public class Contact implements Serializable {
     private String name;
 
     @NotNull
-    @Size(min = 5)
+    @Size(min = 4)
     @Column(name = "email", nullable = false)
     private String email;
 
@@ -37,10 +37,12 @@ public class Contact implements Serializable {
     @Column(name = "phone", nullable = false)
     private String phone;
 
-    @NotNull
-    @Size(min = 2)
-    @Column(name = "note", nullable = false)
+    @Size(min = 1)
+    @Column(name = "note")
     private String note;
+
+    @ManyToOne
+    private User user;
 
     public Long getId() {
         return id;
@@ -100,6 +102,19 @@ public class Contact implements Serializable {
 
     public void setNote(String note) {
         this.note = note;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public Contact user(User user) {
+        this.user = user;
+        return this;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     @Override

@@ -13,12 +13,13 @@
                 "question": "Are you sure you want to delete Contact {{ id }}?"
             },
             "detail": {
-                "title": "Contact"
+                "title": ""
             },
             "name": "Name",
             "email": "Email",
             "phone": "Phone",
-            "note": "Note"
+            "note": "Note",
+            "user": "User"
         }
     }
 }

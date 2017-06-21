@@ -5,14 +5,15 @@
         .module('jhipsterSampleApplicationApp')
         .controller('ContactDialogController', ContactDialogController);
 
-    ContactDialogController.$inject = ['$timeout', '$scope', '$stateParams', '$uibModalInstance', 'entity', 'Contact'];
+    ContactDialogController.$inject = ['$timeout', '$scope', '$stateParams', '$uibModalInstance', 'entity', 'Contact', 'User'];
 
-    function ContactDialogController ($timeout, $scope, $stateParams, $uibModalInstance, entity, Contact) {
+    function ContactDialogController ($timeout, $scope, $stateParams, $uibModalInstance, entity, Contact, User) {
         var vm = this;
 
         vm.contact = entity;
         vm.clear = clear;
         vm.save = save;
+        vm.users = User.query();
 
         $timeout(function (){
             angular.element('.form-group:eq(1)>input').focus();
