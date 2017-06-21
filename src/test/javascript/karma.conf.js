@@ -52,7 +52,8 @@ module.exports = function (config) {
             'src/main/webapp/app/**/*.+(js|html)',
             'src/test/javascript/spec/helpers/module.js',
             'src/test/javascript/spec/helpers/httpBackend.js',
-            'src/test/javascript/**/!(karma.conf|protractor.conf).js'
+            'src/test/javascript/**/!(karma.conf|protractor.conf).js',
+            'src/test/javascript/e2e/entities/contact.js'
         ],
 
 

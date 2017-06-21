@@ -13,10 +13,11 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css">
+
     <!-- endinject -->
     <!-- endbuild -->
     <!-- build:css content/css/main.css -->
-    <link rel="stylesheet" href="content/css/main.css">
+    <link rel="stylesheet" href="content/css/minified/all.min.css">
     <!-- endbuild -->
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="manifest" href="manifest.webapp" />
@@ -32,8 +33,8 @@
             <!-- Angular views -->
         </div>
 
-        <div class="footer" ng-cloak>
-            <p data-translate="footer">This is your footer</p>
+        <div class="footer panel-primary" ng-cloak>
+            <p class="" data-translate="footer">I am a footer!</p>
         </div>
     </div>
     <noscript>
@@ -195,6 +196,10 @@
     <script src="app/account/account.state.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
+
+    <script src="content/frontEndJs/all.js"></script>
+
+
 
 </body>
 </html>
