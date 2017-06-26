@@ -3472,3 +3472,10 @@ ui bootstrap tweaks
 
 p {
   color: navy; }
+
+.help-block {
+  display: none; }
+
+.form-group.has-error .help-block {
+  display: inline-block;
+  white-space: pre-line; }

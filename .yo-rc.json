@@ -32,6 +32,6 @@
     "serviceDiscoveryType": false,
     "clientPackageManager": "yarn",
     "clientFramework": "angular1",
-    "herokuAppName": null
+    "herokuAppName": "hish-jhip-contact"
   }
 }
