@@ -3470,12 +3470,10 @@ ui bootstrap tweaks
 
 /* jhipster-needle-css-add-main JHipster will add new css style */
 
-p {
-  color: navy; }
-
 .help-block {
   display: none; }
 
 .form-group.has-error .help-block {
   display: inline-block;
-  white-space: pre-line; }
+  white-space: pre-line;
+  position: static !important; }

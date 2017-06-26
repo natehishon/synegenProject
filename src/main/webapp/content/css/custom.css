@@ -1,9 +1,7 @@
-p {
-  color: navy; }
-
 .help-block {
   display: none; }
 
 .form-group.has-error .help-block {
   display: inline-block;
-  white-space: pre-line; }
+  white-space: pre-line;
+  position: static !important; }
