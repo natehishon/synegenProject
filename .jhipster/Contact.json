@@ -18,7 +18,7 @@
                 "required",
                 "minlength"
             ],
-            "fieldValidateRulesMinlength": 5
+            "fieldValidateRulesMinlength": 4
         },
         {
             "fieldName": "phone",
@@ -33,15 +33,14 @@
             "fieldName": "note",
             "fieldType": "String",
             "fieldValidateRules": [
-                "required",
                 "minlength"
             ],
-            "fieldValidateRulesMinlength": 2
+            "fieldValidateRulesMinlength": 1
         }
     ],
     "changelogDate": "20170620172643",
     "entityTableName": "contact",
     "dto": "no",
-    "pagination": "infinite-scroll",
+    "pagination": "no",
     "service": "no"
 }

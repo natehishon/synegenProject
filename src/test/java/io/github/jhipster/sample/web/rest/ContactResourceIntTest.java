@@ -194,24 +194,6 @@ public class ContactResourceIntTest {
 
     @Test
     @Transactional
-    public void checkNoteIsRequired() throws Exception {
-        int databaseSizeBeforeTest = contactRepository.findAll().size();
-        // set the field null
-        contact.setNote(null);
-
-        // Create the Contact, which fails.
-
-        restContactMockMvc.perform(post("/api/contacts")
-            .contentType(TestUtil.APPLICATION_JSON_UTF8)
-            .content(TestUtil.convertObjectToJsonBytes(contact)))
-            .andExpect(status().isBadRequest());
-
-        List<Contact> contactList = contactRepository.findAll();
-        assertThat(contactList).hasSize(databaseSizeBeforeTest);
-    }
-
-    @Test
-    @Transactional
     public void getAllContacts() throws Exception {
         // Initialize the database
         contactRepository.saveAndFlush(contact);

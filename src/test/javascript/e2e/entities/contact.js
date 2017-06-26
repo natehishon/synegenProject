@@ -38,20 +38,6 @@ describe('Contact e2e test', function () {
         });
     });
 
-    //custom tests
-
-    var value = 'some value';
-    var differentValue = 'different value';
-
-    beforeEach(function () {
-        setFixtures($('<input id="field_email" type="text" />').val(value));
-    });
-
-    it("should pass if value matches expectation", function () {
-        expect($('#field_email')).toHaveValue(value);
-        expect($('#field_email').get(0)).toHaveValue(value);
-    });
-
     afterAll(function () {
         accountMenu.click();
         logout.click();
